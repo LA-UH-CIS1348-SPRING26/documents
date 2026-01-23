@@ -17,14 +17,17 @@
 3. Make sure your education benefits are fully activated before proceeding
 
 ## 4. Verify Your Installation
-Open your terminal (Mac) or Command Prompt/Git Bash (Windows) and run these commands:
+Open the terminal (the window at the bottom of VS Code) and run these commands:
 
 ```bash
 git --version
 python --version
 ```
 
+**Windows users:** Click the down arrow next to the terminal name to change your terminal to Git Bash
+
 **Note:** On some systems, you may need to use `python3` instead of `python`
+
 
 ## 5. Consider Google Gemini Pro (Free for Students)
 Sign up for 1 year free access: https://ai.google.dev/gemini-api/docs/
