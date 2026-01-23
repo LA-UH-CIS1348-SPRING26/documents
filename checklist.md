@@ -26,11 +26,30 @@ python --version
 
 **Note:** On some systems, you may need to use `python3` instead of `python`
 
-## 5. Get Google Gemini Pro (Free for Students)
+## 5. Consider Google Gemini Pro (Free for Students)
 Sign up for 1 year free access: https://ai.google.dev/gemini-api/docs/
 
 ### Important: AI Tool Usage Policy
-- ✅ **Chat agents are ALLOWED** as tutors (Gemini, ChatGPT, Claude, etc.)
-- ❌ **Coding agents are STRICTLY FORBIDDEN** (GitHub Copilot, Claude Code, GitHub Codex, etc.)
 
-As demonstrated in class, coding agents must be avoided at all costs.
+#### ✅ Chat Agents (ALLOWED)
+**Examples:** Gemini, ChatGPT, Claude, etc.
+
+Chat agents are excellent learning tools. You can use them to:
+- Understand programming concepts and theory
+- Review and analyze your code
+- Get explanations of how code works
+- Ask questions about programming, problem solving
+
+Chat agents respond to your questions but don't directly modify your files.
+
+#### ❌ Coding Agents (STRICTLY FORBIDDEN)
+**Examples:** GitHub Copilot, Claude Code, GitHub Codex, Cursor AI, etc.
+
+Coding agents are prohibited, they:
+- Automatically create and modify files
+- Write code for you autonomously
+- Become intrusive and make it difficult to track what's happening
+- Quickly get out of control in complex projects
+- Prevent you from learning fundamental programming skills
+
+**As demonstrated in class, coding agents must be avoided at all costs.**
