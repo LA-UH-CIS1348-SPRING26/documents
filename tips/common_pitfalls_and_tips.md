@@ -2,6 +2,7 @@
 ---
 # Common Pitfalls, Tips for Success
 
+---
 ### Passing a string argument to the `input()` function
 
 When submitting your solutions, ensure your `input()` functions do not contain any strings.
