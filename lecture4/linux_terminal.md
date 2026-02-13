@@ -899,7 +899,3 @@ Ctrl+D                 # Exit terminal
 - **Nano Editor Guide:** https://www.nano-editor.org/dist/latest/nano.html
 - **Linux Command Reference:** https://man7.org/linux/man-pages/
 - **Python Documentation:** https://docs.python.org/3/
-
----
-
-*These notes are part of CIS 1314 Lecture 4 materials.*
