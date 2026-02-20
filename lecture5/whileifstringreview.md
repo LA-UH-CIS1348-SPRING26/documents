@@ -184,12 +184,12 @@ Raises a number to a power:
 
 ### 3.5 Operator Overloading
 
-The same operator can behave differently depending on the **type** of data it operates on. This is called **operator overloading**.
+The same operator can behave differently depending on the **type** of data it operates on. This is called **operator overloading**. It applies to all operators — `!=`, `==`, `+`, `>`, `<`, and others.
 
-For example, `!=` with integers compares two numbers:
+For example, `!=` with integers compares two numbers. `len()` returns an integer (the character count), so `len(a) != len(b)` is an integer comparison:
 
 ```python
-len(a) != len(b)    # compares two integers (the lengths)
+len(a) != len(b)    # len() returns an int — this compares two integers (the lengths)
 ```
 
 But `!=` with strings goes character by character through both strings to check if they match:
@@ -280,6 +280,8 @@ print(f"{x:.4f}")    # Output: 3.1416  (4 decimal places)
 This is primarily for **display purposes** — it rounds for printing but does not change the actual value of the variable.
 
 ### 5.3 Scientific Notation
+
+**Why we need it.** When working with very large or very small numbers, writing them out in full is error-prone. If you forget a single zero, the value changes by a factor of 10. If you add an extra zero, same problem in the other direction. For example, it is easy to miscount the zeros in `10000000` vs `100000000` — they differ by 10×, but both look similar at a glance. With scientific notation, `1e7` vs `1e8` makes the exponent (the number of zeros) explicit. The magnitude is impossible to misread.
 
 Scientific notation is a way to write very large or very small numbers compactly:
 
@@ -381,7 +383,7 @@ x *= 2     # same as x = x * 2
 
 ### 8.4 Flags (Boolean Variables for Tracking State)
 
-A **flag** is a boolean variable (`True` or `False`) that you use to remember whether something happened. You set it before a loop, update it inside the loop when the event occurs, and check it after the loop to decide what to do.
+A **flag** is a variable that you use to remember whether something happened. You set it before a loop, update it inside the loop when the event occurs, and check it after the loop to decide what to do.
 
 ```python
 found = False              # flag starts as False
@@ -398,6 +400,35 @@ else:
 ```
 
 Flags are useful when a loop can end for multiple reasons and you need to know *which* reason after the loop is done. Instead of trying to figure it out from counters or other variables, a flag gives you a clear, unambiguous answer: did the thing happen or not?
+
+#### The `bool` Type
+
+A flag is typically a **`bool`** — short for *boolean*. `bool` is a type in Python, just like `int` or `float`. A `bool` variable can hold exactly one of two values: `True` or `False`.
+
+```python
+type(True)     # <class 'bool'>
+type(42)       # <class 'int'>
+```
+
+Under the hood, `bool` is a special kind of integer: `True` is literally `1` and `False` is literally `0`. Python just gives them readable names.
+
+```python
+True == 1      # True
+False == 0     # True
+True + True    # 2  (bool arithmetic works exactly like integers)
+```
+
+This is why you sometimes see `if correctlyguessed == True:` written simply as `if correctlyguessed:` — they mean the same thing. Both forms are correct; the shorter one is more common in practice.
+
+#### Integer Flags
+
+A flag does not have to be `True`/`False`. Sometimes an integer is more useful when you need to track more than two states:
+
+```python
+state = 0        # 0 = not started, 1 = in progress, 2 = done, -1 = error
+```
+
+For simple yes/no decisions, `bool` is clearer and more readable. Use an integer flag when you need to distinguish more than two outcomes from a loop.
 
 ---
 
@@ -449,15 +480,6 @@ while x <= N:                  # keep going as long as x hasn't passed N
     x += 1                     # move to the next number
 ```
 
-**What happens step by step (if user enters 3):**
-
-| Iteration | `x` at top | `x <= 3`? | Prints | `x` after `+= 1` |
-|-----------|-----------|-----------|--------|-------------------|
-| 1         | 1         | True      | 1      | 2                 |
-| 2         | 2         | True      | 2      | 3                 |
-| 3         | 3         | True      | 3      | 4                 |
-| 4         | 4         | False     | —      | (loop exits)      |
-
 ---
 
 ### Example 0b: Count from N Down to 1
@@ -501,34 +523,48 @@ Note how this version uses a single variable `current` instead of having a separ
 program to print out sum of even numbers from 0 to 6
 """
 
-s = 0
+total = 0
 x = 0
 while x <= 6:
-    s += x
+    total += x
     x += 2
 
-print(s)
+print(total)
 ```
 
 Commented version:
 
 ```python
-s = 0                  # accumulator — starts at 0
+total = 0              # accumulator — starts at 0
 x = 0                  # first even number
 while x <= 6:          # loop through 0, 2, 4, 6
-    s += x             # add current even number to the running sum
+    total += x         # add current even number to the running sum
     x += 2             # jump to the next even number (skip odds entirely)
 
-print(s)               # prints 12  (0 + 2 + 4 + 6 = 12)
+print(total)           # prints 12  (0 + 2 + 4 + 6 = 12)
 ```
 
 **Why step by 2 instead of checking `x % 2 == 0`?** If you start at 0 and add 2 each time, every value of `x` is guaranteed to be even. There is no need to check — it's a shortcut.
 
 **Order matters inside the loop.** This was demonstrated live in class:
-- If you put `s += x` **before** `x += 2`: you add 0, 2, 4, 6 → sum is 12 (correct).
-- If you put `x += 2` **before** `s += x`: you add 2, 4, 6, 8 → sum is 20 (wrong). The value of `x` gets updated before you use it, so you skip 0 and include 8 (which is past the intended range).
+- If you put `total += x` **before** `x += 2`: you add 0, 2, 4, 6 → sum is 12 (correct).
+- If you put `x += 2` **before** `total += x`: you add 2, 4, 6, 8 → sum is 20 (wrong). The value of `x` gets updated before you use it, so you skip 0 and include 8 (which is past the intended range).
 
 The condition `x <= 6` is only checked at the **top** of the loop. If `x` becomes 8 inside the loop body, the loop doesn't notice until the next check.
+
+**What if you swap the order?** Here is the same loop with `x += 2` moved *before* `total += x`:
+
+```python
+# WRONG order — do NOT do this:
+total = 0
+x = 0
+while x <= 6:
+    x += 2       # x is updated first: becomes 2, 4, 6, 8
+    total += x   # then added: skips 0, includes 8
+print(total)     # prints 20, not 12
+```
+
+`x` reaches 8 inside the loop body, but the condition `x <= 6` isn't checked again until the top of the next iteration — by then it's too late, 8 has already been added. And 0 was never added because `x` was incremented before the first addition. This is the same principle as Section 2.1: the condition is only checked at the top.
 
 ---
 
@@ -536,59 +572,130 @@ The condition `x <= 6` is only checked at the **top** of the loop. If `x` become
 
 **Problem:** Write a program that checks a password. The password is stored in the code. The user gets a limited number of attempts.
 
-**Concepts used:** `while` loop with condition, `break`, string equality `==`, counter
+**Concepts used:** `while` loop with condition, `break`, string equality `==`, counter, flag
+
+There are two natural ways to write this program. Both work. They differ in *how they communicate the outcome* after the loop ends.
+
+---
+
+#### Version A — With a Flag
 
 ```python
 """
-write a program that checks a password (pw is stored inside the code),
-limited number of attempts allowed. let user enter the pw.
+user enters a password program checks to see if they can login
+3 tries maximum
 """
 
-password = "bagtty"
-max_number_of_tries = 3
-number_of_tries = 0
-logged_in = False
+secretpassword = "!1234!"
 
-while number_of_tries < max_number_of_tries:
-    pw = input("ENTER PASSWORD:")
-    number_of_tries += 1
+correctlyguessed = False
+count = 0
+while count < 3:
+    userinput = input("enter your password:")
 
-    if pw == password:
-        logged_in = True
+    if userinput == secretpassword:
+        correctlyguessed = True
         break
 
-if logged_in:
-    print("WELCOME TO THE MATRIX!")
+    count += 1
+    print(f"you tried {count} times")
+
+if correctlyguessed == True:
+    print("welcome to the matrix")
 else:
-    print("WRONG PASSWORD YOUR SSN IS LEAKED 478-96-1789")
+    print("the last 4 digits of your SSN is 3893, to find out more call 1-800-xxx-xxxx")
 ```
 
 Commented version:
 
 ```python
-password = "bagtty"                              # the correct password (stored in code)
-max_number_of_tries = 3                          # user gets 3 attempts
-number_of_tries = 0                              # no attempts made yet
-logged_in = False                                # flag — did the user log in successfully?
+secretpassword = "!1234!"
 
-while number_of_tries < max_number_of_tries:     # loop as long as tries remain
-    pw = input("ENTER PASSWORD:")                # get user's guess
-    number_of_tries += 1                         # count this attempt immediately
+correctlyguessed = False          # flag — starts False, becomes True only on success
+count = 0
 
-    if pw == password:                           # compare guess to stored password
-        logged_in = True                         # flip the flag — success!
-        break                                    # exit the loop immediately
+while count < 3:                  # loop while tries remain
+    userinput = input("enter your password:")
 
-# after the loop: check the flag to decide what to print
-if logged_in:
-    print("WELCOME TO THE MATRIX!")
+    if userinput == secretpassword:
+        correctlyguessed = True   # flip the flag — correct guess!
+        break                     # exit immediately, don't increment count
+
+    count += 1                    # wrong guess — count this attempt
+    print(f"you tried {count} times")
+
+# after the loop: the flag tells us clearly why we stopped
+if correctlyguessed == True:
+    print("welcome to the matrix")
 else:
-    print("WRONG PASSWORD YOUR SSN IS LEAKED 478-96-1789")
+    print("the last 4 digits of your SSN is 3893, to find out more call 1-800-xxx-xxxx")
 ```
 
-**Key point — using a flag:** the loop can end for two reasons: the user guessed correctly (`break`) or ran out of tries (condition became `False`). Instead of trying to figure out which happened from the counter, we use a **flag** (`logged_in`). It starts as `False` and only becomes `True` when the password matches. After the loop, we simply check the flag — no ambiguity.
+**How it works:** the loop can exit for two reasons — correct password (`break`) or used all 3 tries (condition `count < 3` becomes `False`). The flag `correctlyguessed` is the unambiguous answer: it is only ever set to `True` when the password matched. After the loop, one simple check is all you need.
 
-Notice that `number_of_tries += 1` is placed **before** the password check, so the counter always reflects the actual number of attempts made.
+---
+
+#### Version B — Without a Flag (Using the Counter Instead)
+
+```python
+"""
+user enters a password and program tells them whether they can login or not
+3 tries allowed
+"""
+
+password = "12345!"
+
+count = 0
+while count < 3:
+    userinput = input("enter password:")
+
+    if userinput == password:
+        print("welcome to your bank account")
+        break
+    else:
+        print("denied")
+
+    count += 1
+
+if count >= 3:
+    print("locked out welcome to fbi jail")
+```
+
+Commented version:
+
+```python
+password = "12345!"
+
+count = 0
+while count < 3:
+    userinput = input("enter password:")
+
+    if userinput == password:
+        print("welcome to your bank account")
+        break                      # exit on success — count stays below 3
+    else:
+        print("denied")
+
+    count += 1                     # wrong guess — increment
+
+# after the loop: if count reached 3, we know the user never succeeded
+if count >= 3:
+    print("locked out welcome to fbi jail")
+```
+
+**How it works:** instead of a dedicated flag, this version repurposes the counter. If the user breaks out on a correct guess, `count` never reaches 3. If all tries are exhausted, `count` ends up at 3. So `count >= 3` is an indirect way of detecting "never logged in". It works, but you have to think about it more carefully than checking a flag.
+
+---
+
+**Version A vs Version B — which to use?**
+
+| | Version A (flag) | Version B (counter) |
+|---|---|---|
+| Clarity | Very clear — `correctlyguessed` tells you exactly what happened | Requires reasoning about the counter value |
+| Extra variable | Yes — one extra boolean | No — reuses the counter |
+| When to prefer | When the loop can end for many reasons | When the counter alone is enough to distinguish outcomes |
+
+For simple yes/no outcomes, the flag is usually cleaner. Use the counter approach when you already need the count and there are only two possible exit paths.
 
 ---
 
