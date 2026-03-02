@@ -1,4 +1,4 @@
-# Lecture Notes 2 — Strings and Lists
+# Strings and Lists
 
 ## Table of Contents
 

@@ -1,4 +1,4 @@
-# Lecture Notes 1 — Arrays, Operations, and the Stack
+# Arrays
 
 ## Table of Contents
 

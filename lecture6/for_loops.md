@@ -1,4 +1,4 @@
-# Lecture Notes 4 — For Loops
+# For Loops
 
 ## Table of Contents
 
