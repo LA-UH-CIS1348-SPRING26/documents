@@ -601,6 +601,20 @@ Removes whitespace from both ends of a string (not from the middle):
 "  START  ".strip().lower()  # 'start'
 ```
 
+### `replace()`
+
+Replaces every occurrence of a substring with another string:
+
+```python
+s = "i like cats and cats like me"
+print(s.replace("cats", "dogs"))   # 'i like dogs and dogs like me'
+
+# Remove a character by replacing it with an empty string
+print("hello!".replace("!", ""))   # 'hello'
+```
+
+`replace(old, new)` returns a new string with **all** occurrences of `old` swapped for `new`. The original string is untouched.
+
 ### Chaining Methods
 
 String methods return strings, so you can chain them:
