@@ -1,3 +1,10 @@
+
+---
+# CIS1348 Lecture Notes
+### — Levent Albayrak — 2026
+**Contact:** [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
 # Development Environment Setup Checklist
 
 ## 1. Install Visual Studio Code
