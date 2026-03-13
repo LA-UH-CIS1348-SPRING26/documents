@@ -1,4 +1,9 @@
-# In-Class Code Examples - Lecture 8
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
+# In-Class Code Examples
 
 ## Example 1: Parallel Arrays and Battle Simulation
 

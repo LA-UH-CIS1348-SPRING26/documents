@@ -1,3 +1,7 @@
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
 # Programming Languages
 
 ## Table of Contents

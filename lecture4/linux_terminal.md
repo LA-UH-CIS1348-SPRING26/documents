@@ -1,3 +1,8 @@
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
 # Linux Command Line and Terminal-Based Development
 
 ## Table of Contents

@@ -1,3 +1,8 @@
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
 # File I/O, Basic File Parsing, and Reporting
 
 ## 0. What is a File? How the OS Handles Files

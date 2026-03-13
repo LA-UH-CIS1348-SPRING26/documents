@@ -1,3 +1,8 @@
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
 # Parallel Arrays (Structure of Arrays) vs. Array of Arrays (Array of Structures)
 
 The examples are in Python, but this is a data layout decision that exists in every language. The trade-offs are the same whether you're writing C, Java, or assembling spreadsheets.

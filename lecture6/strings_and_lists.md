@@ -1,3 +1,8 @@
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
 # Strings and Lists
 
 ## Table of Contents

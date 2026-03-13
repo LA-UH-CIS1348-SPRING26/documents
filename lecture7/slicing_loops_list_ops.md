@@ -1,4 +1,9 @@
-# Lecture 7 — Arrays, Strings, Lists & Practical Patterns
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
+# Arrays, Strings, Lists & Practical Patterns
 
 ## Table of Contents
 

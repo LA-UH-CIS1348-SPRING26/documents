@@ -1,4 +1,9 @@
-# Lecture 3 — Variables, Types, and Problem Solving in Python
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
+# Variables, Types, and Problem Solving in Python
 
 ## Table of Contents
 

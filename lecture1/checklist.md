@@ -1,8 +1,6 @@
 
 ---
-# CIS1348 Lecture Notes
-### — Levent Albayrak — 2026
-**Contact:** [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
 ---
 
 # Development Environment Setup Checklist

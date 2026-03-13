@@ -1,4 +1,9 @@
-# Lecture 2 -- Computer Architecture
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
+# Computer Architecture
 
 ## Table of Contents
 

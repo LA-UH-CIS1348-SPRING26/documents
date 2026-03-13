@@ -1,4 +1,9 @@
-# Lecture 5 — Practice with While Loops, Operators, and Strings
+
+---
+#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+---
+
+# Practice with While Loops, Operators, and Strings
 
 ## Table of Contents
 
