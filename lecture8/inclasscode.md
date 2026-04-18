@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # In-Class Code Examples
@@ -199,3 +200,6 @@ for line in lines:
 4. **Parallel Arrays**: Maintaining multiple arrays where corresponding indices represent the same entity
 5. **Loop Patterns**: Using `for` loops with `range()` and iterating over file lines
 6. **Data Parsing**: Breaking down structured text data into usable components
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

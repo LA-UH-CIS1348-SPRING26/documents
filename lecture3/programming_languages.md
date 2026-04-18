@@ -1,5 +1,7 @@
+
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Programming Languages
@@ -303,3 +305,6 @@ Programming is **problem-solving**, not art.
 - What matters is, in this order: **1. Correctness** — does it work? Does it handle edge cases? Does it produce the right result every time? **2. Efficiency** — does it make good use of the hardware it runs on?
 - Five solid, no-nonsense, correct, and efficient codebases are worth more than one "beautiful" codebase. Why five to one? Because the time and effort spent obsessing over design elegance and aesthetic perfection is time not spent solving real problems. That same energy could have produced four more working solutions.
 - This by no means suggests doing a half job — quite the opposite. You learn to be efficient, to focus your energy on what actually matters (correctness and performance), and to be tolerant of code that others might view as "not elegant." A pragmatic programmer ships working, reliable software. An idealistic programmer is still refactoring.
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

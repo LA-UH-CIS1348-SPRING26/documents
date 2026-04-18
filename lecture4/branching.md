@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Branching and Loops
@@ -388,3 +389,6 @@ Try creating programs that:
 2. Use a while loop to print numbers from 1 to 10
 3. Combine conditions to check if someone is eligible for a discount (age > 65 OR age < 12)
 4. Read temperatures and print warnings only when they're outside a safe range
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

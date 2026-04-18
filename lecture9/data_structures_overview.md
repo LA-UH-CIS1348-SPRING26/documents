@@ -1,3 +1,9 @@
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
+---
+
 # Data Structures Built on Arrays — An Overview
 
 ## Table of Contents
@@ -225,3 +231,6 @@ When a value in the original array changes, only the nodes on the path from that
 - Need the next most / least urgent item from a changing list → **Heap**
 - Need to know if two nodes are connected in a graph → **Disjoint Set**
 - Need fast range aggregates on a changing array → **Segment Tree**
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

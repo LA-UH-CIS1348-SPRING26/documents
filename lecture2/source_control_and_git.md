@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Source Control and Git
@@ -617,3 +618,6 @@ Think of Git like Microsoft Office:
 - Git is the same for developers
 
 You don't have to love it, but **you have to learn it**.
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

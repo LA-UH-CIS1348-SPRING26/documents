@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Linux Command Line and Terminal-Based Development
@@ -904,3 +905,6 @@ Ctrl+D                 # Exit terminal
 - **Nano Editor Guide:** https://www.nano-editor.org/dist/latest/nano.html
 - **Linux Command Reference:** https://man7.org/linux/man-pages/
 - **Python Documentation:** https://docs.python.org/3/
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

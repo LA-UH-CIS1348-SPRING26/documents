@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Strings and Lists
@@ -712,4 +713,7 @@ s = 'H' + s[1:]   # must create a new string: "Hello"
 
 # Lists — can modify in place
 lst[0] = 'H'      # OK: ['H', 'e', 'l', 'l', 'o']
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
 ```

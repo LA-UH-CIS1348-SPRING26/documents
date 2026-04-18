@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # File I/O, Basic File Parsing, and Reporting
@@ -290,3 +291,6 @@ report.write("id\tname\tvalue\n")    # header
 for i in range(len(names)):
     report.write(f"{i}\t{names[i]}\t{values[i]}\n")
 ```
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

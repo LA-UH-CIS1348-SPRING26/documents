@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Computer Architecture
@@ -235,3 +236,6 @@ Sequential, dependent tasks -- like summing everyone's ages where each addition 
 The only difference between them is **how they arrange the components**: how many CPUs, how much cache at each tier, how the memory is connected, how fast the clock runs. These are business and engineering trade-offs -- not fundamentally different designs.
 
 Understanding this one architecture gives you a foundation for understanding operating systems, networking, cybersecurity, and troubleshooting. It's like understanding how an engine works -- once you know the fundamentals, diagnosing problems becomes much easier.
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

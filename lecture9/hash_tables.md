@@ -1,3 +1,9 @@
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
+---
+
 # Hash Tables (Dictionaries)
 
 ## Table of Contents
@@ -310,3 +316,6 @@ This difference matters a lot with large datasets. If you are checking membershi
 | Overwrite | Assigning to an existing key replaces the value |
 | Nested dicts | Dicts can contain other dicts or lists — use for structured records |
 | Dict as record | Keys are field names, values are attributes of a single entity |
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

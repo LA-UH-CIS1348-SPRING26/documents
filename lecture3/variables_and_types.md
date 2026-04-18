@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Variables, Types, and Problem Solving in Python
@@ -430,3 +431,6 @@ Python reuses the `+` and `*` operators for strings, but the behavior is **not m
 These are arbitrary language choices. There is no mathematical definition for "adding" two words. The Python designers simply decided that `+` on two strings means concatenation and `*` on a string and integer means repetition. Other decisions would have been equally valid.
 
 **The takeaway:** Learn the **programming concepts** (variables, functions, loops, types) — those transfer to every language. Language-specific quirks like string multiplication are just details you memorize for whichever language you're using.
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

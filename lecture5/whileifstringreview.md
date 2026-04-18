@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Practice with While Loops, Operators, and Strings
@@ -1195,3 +1196,6 @@ Everything listed here was introduced in this lecture and is your responsibility
 | Flags (boolean state) | `logged_in = False` … `logged_in = True` |
 | `exit()` | Terminate the program |
 | String indexing (intro) | Index = offset from beginning, starts at 0 |
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

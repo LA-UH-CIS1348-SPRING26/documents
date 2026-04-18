@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Boolean Algebra
@@ -345,3 +346,6 @@ Boolean operations can be implemented using physical switches and circuits:
 - **Think:** Arithmetic, number lines, Venn diagrams, or circuits - use what helps!
 
 Boolean algebra is fundamental to programming logic and computer hardware. Mastering these concepts will help you write better conditional logic and understand how computers work at the most basic level.
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

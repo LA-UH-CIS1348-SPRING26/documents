@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Parallel Arrays (Structure of Arrays) vs. Array of Arrays (Array of Structures)
@@ -187,5 +188,8 @@ salaries, ids, names, departments = zip(*tmp)
 ```
 
 Using `key=` with lambda functions is also an option for controlling what the sort compares — this will be covered in a later lecture.
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
 
 ---

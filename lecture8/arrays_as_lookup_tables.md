@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Arrays as Lookup Tables
@@ -393,3 +394,6 @@ The difference from Pattern 2 (presence/absence) is intent: here the array store
 | Flags / settings | policy values | default setting | configuration | "What is the rule for resource #N?" |
 
 All four patterns share the same foundation: convert your key to an integer index, then access the array in O(1).
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*

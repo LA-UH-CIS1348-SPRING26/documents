@@ -1,6 +1,7 @@
 
 ---
-#### CIS1348 Lecture Notes | **Levent Albayrak, 2026** | [lalbayrak@uh.edu](mailto:lalbayrak@uh.edu)
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
+
 ---
 
 # Running Python Scripts and File Paths
@@ -161,3 +162,6 @@ os.path.abspath("data.txt")        # full absolute path of a relative path
 os.path.join("data", "file.txt")   # build paths safely (handles / vs \)
 os.path.dirname(__file__)          # folder containing the current script
 ```
+
+---
+*© 2026 Levent Albayrak. Distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).*
